@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/my_document_setpersonaddress_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/my_document_setpersonaddress_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_icon_back" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+         
+            android:text="个性域名"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/my_btn_personaddress_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/my_icon_complete" />
+
+        </FrameLayout>
+
+
+   
+   </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/my_document_editPersonAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dip"
+            android:layout_below="@+id/my_document_setpersonaddress_title"
+            android:background="@drawable/my_row_fillet_bg">
+        	
+            <EditText 
+                android:id="@+id/my_edit_personAddress"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的域名"
+                android:layout_margin="5dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            
+            <ImageButton 
+                android:id="@+id/my_document_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_icon_clear"/>
+        </LinearLayout>
+        <TextView 
+            android:layout_below="@+id/my_document_editPersonAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="例如：http://dlb666.com/123456"/>
+  </RelativeLayout>

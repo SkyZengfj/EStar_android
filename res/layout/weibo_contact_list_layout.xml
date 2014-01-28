@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffffff">
+    
+  
+  <RelativeLayout
+    android:id="@+id/weiboHome_contact_search_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bg" >
+<!--
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/weiboHome_contact_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_btn_selector" />
+
+        <ImageView
+            android:id="@+id/weiboHome_contact_return_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_dynamic_details_top_return" />
+    </FrameLayout>
+-->
+    <LinearLayout
+        android:id="@+id/weiboHome_contact_switch_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        
+        <TextView 
+            android:id="@+id/weiboHome_imageView_contact_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我关注的"
+            android:gravity="center"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="@dimen/text_size_nomal"
+	        android:clickable="true"
+	        android:background="@drawable/contact_select_left_1"/>
+        
+        <TextView 
+            android:id="@+id/weiboHome_imageView_contact_all"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:gravity="center"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="@dimen/text_size_nomal"
+	        android:clickable="true"
+	        android:background="@drawable/contact_select_right_2"/>
+        
+    </LinearLayout>"
+        
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weiboHome_contact_search_bg">
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            
+            <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:background="#ff7298bf">
+	            
+	            <EditText 
+	                android:layout_width="match_parent"
+	                android:layout_height="30dp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:background="@drawable/contact_search_edittext_bg"
+	                android:editable="true"
+	                android:drawableLeft="@drawable/contact_search_icon"
+	                android:drawablePadding="10dp"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="10dp"
+	                android:gravity="center_vertical"
+	                android:hint="搜索姓名"
+	                android:textSize="@dimen/text_size_nomal"
+	                android:singleLine="true"/>
+	            
+	        </RelativeLayout>
+<!--       
+	        <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="#fff7f7f7">
+		
+		        <ImageView
+		            android:id="@+id/contact_list_imageview_contact_mark"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/contact_mark_icon"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"/>
+		
+		        <TextView
+		            android:id="@+id/contact_list_textview_contact_type"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:textSize="@dimen/text_size_medium"
+		            android:textColor="#ff000000"
+		            android:text="常用联系人"
+		            android:layout_centerVertical="true"
+		            android:layout_toRightOf="@id/contact_list_imageview_contact_mark"/>
+		
+		        <ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:background="@drawable/contact_item_next_mark_icon"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="16dp"/>
+		
+		    </RelativeLayout>
+--> 		    
+	        <ListView 
+	            android:id="@+id/weiboHome_all_contact_list"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:cacheColorHint="#00000000"
+	            android:divider="@drawable/expandablelistview_divider"
+		        android:fadingEdge="none"
+		        android:scrollingCache="false"
+		        android:scrollbars="none"
+	            android:visibility="gone">
+	            
+	        </ListView>
+	        
+	        <ExpandableListView 
+	            android:id="@+id/weiboHome_attention_contact_list"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:cacheColorHint="#00000000"
+		        android:fadingEdge="none"
+		        android:scrollingCache="false"
+		        android:scrollbars="none"
+		        android:background="#fff7f7f7">
+	            
+	        </ExpandableListView>
+            
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/weiboHome_contact_selected_avatar_list_relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="@drawable/contact_selected_arvatar_list_bg">
+            
+            <TextView 
+                android:id="@+id/weiboHome_contact_select_complete_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="#ff35aef2"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff444444"
+                android:text="完成()"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="@dimen/text_size_nomal"/>
+            
+            <HorizontalScrollView 
+                android:id="@+id/weiboHome_contact_selected_avatar_hScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:layout_toLeftOf="@id/weiboHome_contact_select_complete_btn">
+                
+                <LinearLayout 
+                    android:id="@+id/weiboHome_contact_selected_avatar_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

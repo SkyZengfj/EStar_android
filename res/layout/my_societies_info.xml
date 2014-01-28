@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/my_societies_info_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_navigation_cancel_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/my_societies_info_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="茶话会  (77人)"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <!-- 群头像及信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 头像 -->
+
+            <ImageView
+                android:id="@+id/my_societies_head_picture"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dip"
+                android:src="@drawable/my_icon_avatar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 群组名称 -->
+
+                <TextView
+                    android:id="@+id/my_societies_groupInformationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="茶话会"
+                    android:textColor="#242424" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 群创建人 -->
+
+                <TextView
+                    android:id="@+id/my_txt_socities_createGroupPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="李梦然" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/my_icon_vertical_1" />
+                <!-- 创建时间 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="创建于" />
+
+                <TextView
+                    android:id="@+id/my_txt_socities_createGroupTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1013-10-21" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 公告 -->
+
+    <LinearLayout
+        android:id="@+id/my_btn_cocities_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/my_icon_listbg_up"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="公告"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/societies_info_notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="本社团以休闲娱乐为..."
+            android:textSize="@dimen/text_size_nomal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/my_icon_go" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/my_icon_line" />
+    <!-- 相册 -->
+    <!--
+    <LinearLayout
+        android:id="@+id/my_btn_socities_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/my_icon_listbg_center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="相册"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/societies_info_blbum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/my_icon_go" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/my_icon_line" />
+    -->
+    <!--
+    <LinearLayout
+        android:id="@+id/my_btn_cocities_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/my_icon_listbg_down"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="共享"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/societies_info_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/my_icon_go" />
+    </LinearLayout>    -->
+    <!-- 群成员 -->
+
+    <LinearLayout
+        android:id="@+id/my_btn_cocities_groupMembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/my_icon_listbg_up"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="群成员"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/societies_info_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/text_size_nomal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/my_icon_go" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/my_icon_line" />
+
+    <!-- 邀请成员 -->
+
+    <LinearLayout
+        android:id="@+id/my_btn_inviteMenbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/my_icon_listbg_down"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="邀请成员"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/societies_info_invite_member"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/my_icon_go" />
+    </LinearLayout>
+
+</LinearLayout>

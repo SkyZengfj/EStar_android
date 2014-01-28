@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/news_test_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageButton
+                android:id="@+id/newsTest_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_frame_dynamic_details_top_return" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/newsTest_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="心灵家园"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/news_heart_test_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_heart_test_switch_layout_bg" >
+
+        <TextView
+            android:id="@+id/news_heart_test_gexing"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="个性测试"
+            android:textColor="#eb4666"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/news_heart_test_aiqing"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="爱情测试"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/news_heart_test_shiye"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="事业测试"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+        
+        <TextView
+            android:id="@+id/news_heart_test_quwei"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="趣味测试"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/news_heart_test_switch_cursor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/newsTestPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

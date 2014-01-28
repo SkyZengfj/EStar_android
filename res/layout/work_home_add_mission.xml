@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/work_home_add_mission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/work_home_add_mission_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/work_home_navigation_cancel_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/work_home_add_mission_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="新建任务"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/work_home_add_mission_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_save_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_add_mission"
+        android:background="@drawable/work_home_matter_details_background" >
+
+        <TextView
+            android:id="@+id/mission_name0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="任务名称：" />
+
+        <RelativeLayout
+            android:id="@+id/mission_input0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mission_name0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/work_home_add_matter_input_background" >
+
+            <EditText
+                android:id="@+id/mission_input_editText0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入任务名称"
+                android:paddingLeft="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mission_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mission_input0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="任务内容" />
+
+        <EditText
+            android:id="@+id/mission_input_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mission_name1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/work_home_add_matter_input1_background"
+            android:gravity="top|left"
+            android:hint="请输入任务内容"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:id="@+id/work_home_add_mission_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mission_input_editText1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/work_home_add_mission_leader_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_left_background"
+                    android:gravity="center"
+                    android:text="负责人"
+                    android:textColor="#003366" />
+
+                <TextView
+                    android:id="@+id/work_home_add_mission_leader_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_right_background"
+                    android:drawableRight="@drawable/work_home_add_matter_arrow_icon"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未指定" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/work_home_add_mission_member_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_left_background"
+                    android:gravity="center"
+                    android:text="成员"
+                    android:textColor="#003366" />
+
+                <TextView
+                    android:id="@+id/work_home_add_mission_member_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_right_background"
+                    android:drawableRight="@drawable/work_home_add_matter_arrow_icon"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未指定" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_left_background"
+                    android:gravity="center"
+                    android:text="截止日期"
+                    android:textColor="#003366" />
+
+                <TextView
+                    android:id="@+id/work_home_add_mission_end_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_matter_list_right_background"
+                    android:drawableRight="@drawable/work_home_add_matter_arrow_icon"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未指定" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

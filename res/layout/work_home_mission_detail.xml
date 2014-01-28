@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/work_home_mission_detail_background" >
+
+    <RelativeLayout
+        android:id="@+id/workHome_mission_detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/work_home_mission_detail_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_navigation_cancel_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="任务详情"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/work_home_mission_detail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_navigation_save_icon" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/work_home_mission_detail_linear_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workHome_mission_detail_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/work_home_mission_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/work_home_mission_detail_name"
+                android:src="@drawable/work_home_mission_detail_cut_line" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/work_home_mission_detail_leader_background" >
+
+            <TextView
+                android:id="@+id/work_home_mission_detail_leader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/work_home_mission_detail_linear_layout_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_linear_layout_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/work_home_mission_detail_start_time"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_mission_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/work_home_mission_detail_end_time"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/work_home_mission_detail_cut_line_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_linear_layout_mid"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/work_home_mission_detail_cut_line" />
+
+    <RelativeLayout
+        android:id="@+id/work_home_mission_detail_linear_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_cut_line_mid"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_operate_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/work_home_mission_detail_add_member_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/work_home_mission_detail_add_member_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/work_home_mission_detail_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_linear_layout_bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/work_home_mission_detail_cut_line" />
+
+    <TextView
+        android:id="@+id/work_home_mission_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_cut_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_mission_detail_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/work_home_member_list_title_progress_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_progress_btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_progress_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_progress_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_progress_btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/work_home_mission_detail_progress_btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+    </LinearLayout>
+
+</RelativeLayout>

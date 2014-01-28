@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/componentTabNavigate_btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_frame_tab_bg" >
+
+        <ImageView
+            android:id="@+id/componentTabNavigate_icHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_frame_tab_item_ic_home" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/componentTabNavigate_btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_frame_tab_bg" >
+
+        <ImageView
+            android:id="@+id/componentTabNavigate_icAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_frame_tab_item_ic_action" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/componentTabNavigate_btnMy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_frame_tab_bg" >
+
+        <ImageView
+            android:id="@+id/componentTabNavigate_icMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_frame_tab_item_ic_my" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/componentTabNavigate_btnNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_frame_tab_bg" >
+
+        <ImageView
+            android:id="@+id/componentTabNavigate_icNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_frame_tab_item_ic_news" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/componentTabNavigate_btnWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/main_frame_tab_bg" >
+
+        <ImageView
+            android:id="@+id/componentTabNavigate_icWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_frame_tab_item_ic_work" />
+    </RelativeLayout>
+
+</LinearLayout>

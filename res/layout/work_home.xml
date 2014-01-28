@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <ImageButton
+                    android:id="@+id/work_home_matter_list_add_matter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/work_home_add_icon" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/work_home_mission_detail_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="我参与的事项"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/work_home_mission_detail_title_name"
+                android:background="@drawable/top_btn_bg_triangle" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageButton
+                    android:id="@+id/work_home_matter_list_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_frame_dynamic_details_top_more" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/work_home_tab_bg"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/workHome_tab0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/workHome_tab0_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="进行中"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/text_size_nomal" />
+
+                <ImageView
+                    android:id="@+id/under_line_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/workHome_tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/workHome_tab1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="逾期的"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/text_size_nomal" />
+
+                <ImageView
+                    android:id="@+id/under_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/workHome_tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/workHome_tab2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="已完成"
+                    android:textColor="#424242"
+                    android:textSize="@dimen/text_size_nomal" />
+
+                <ImageView
+                    android:id="@+id/under_line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/work_home_list_item_cun_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/workHome_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.mcds.app.android.estar.component.TabNavigateComponent
+            android:id="@+id/workHome_tabNavigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.mcds.app.android.estar.component.TabNavigateComponent>
+    </LinearLayout>
+    <!-- 标题栏选项 -->
+
+    <LinearLayout
+        android:id="@+id/workHome_msgTypeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/action_home_frame_top_msg_type_bg"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/workHome_msgTypeList_participate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/main_frame_top_msg_type_top_item_selected_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="我参与的事项"
+                android:textColor="#063165"
+                android:textSize="@dimen/text_size_nomal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/work_home_title_list_item_cut_line" />
+
+        <LinearLayout
+            android:id="@+id/workHome_msgTypeList_responsible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/main_frame_top_msg_type_top_item_unselected_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="我负责的事项"
+                android:textColor="#063165"
+                android:textSize="@dimen/text_size_nomal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/work_home_title_list_item_cut_line" />
+
+        <LinearLayout
+            android:id="@+id/workHome_msgTypeList_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/main_frame_top_msg_type_top_item_unselected_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="我创建的事项"
+                android:textColor="#063165"
+                android:textSize="@dimen/text_size_nomal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@drawable/work_home_title_list_item_cut_line" />
+    </LinearLayout>
+
+</FrameLayout>

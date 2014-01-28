@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+    
+    <TextView 
+        android:id="@+id/weiboHome_matter_select_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="@dimen/text_size_large"/>
+    
+</LinearLayout>

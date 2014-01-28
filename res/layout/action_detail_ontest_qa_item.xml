@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <TextView
+        android:id="@+id/action_detail_ontest_qa_item_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="A.是的"
+        android:textColor="#444444"
+        android:background="@drawable/action_detail_ontest_qa_answeritem_bg_12"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:id="@+id/action_detail_ontest_qa_item_redframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:background="@drawable/action_detail_ontest_qa_answeritem_selection_bg_frame" />
+
+</FrameLayout>

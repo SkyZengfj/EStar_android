@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <RelativeLayout
+        android:id="@+id/news_detail_ontest_relayout_top"
+        android:layout_alignParentTop="true"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/top_bg" >
+	
+	    <FrameLayout
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <ImageButton
+	        	android:id="@+id/news_detail_ontest_back_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/main_frame_dynamic_details_top_return" 
+	            />
+	        
+	     </FrameLayout>
+	
+	     <TextView
+	     	android:id="@+id/newsHome_onh_textview_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="花心指数测试"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="@dimen/text_size_medium"
+	        android:clickable="true"/>
+	        
+	
+	     <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true" >
+	
+	        <ImageButton
+	        	android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/top_btn_selector" />
+	            
+	      </FrameLayout>
+	        
+	</RelativeLayout>
+	
+    <LinearLayout 
+        android:id="@+id/news_detail_ontest_qa_hint_layout"
+        android:background="#f2f2f2"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/news_detail_ontest_relayout_top"
+        >
+        
+        <TextView 
+            android:id="@+id/news_detail_ontest_qa_title"
+            android:text="请从下面的问题中，选择一个和自己最切合的答案。（点击选择）"
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#777777"
+	    	android:textSize="@dimen/text_size_nomal"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/news_detail_ontest_qa_question_layout"
+        android:background="#dddddd"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/news_detail_ontest_qa_hint_layout"
+	    android:layout_above="@+id/news_detail_ontest_relayout_bottom"
+        >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="center_vertical"
+            >
+            
+            <FrameLayout 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:background="@drawable/action_detail_ontest_qa_index_bg"
+                >
+                
+                <TextView 
+                    android:id="@+id/news_detail_ontest_qa_index"
+                    android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center"
+	    			android:text="1"
+	    			android:textColor="#ffffff"
+	    			android:textSize="@dimen/text_size_medium"
+                    />
+                
+            </FrameLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal"
+	    		android:background="@drawable/action_detail_ontest_qa_question_bg"
+	    		android:padding="5dp"
+                >
+                
+                <TextView 
+                    android:id="@+id/news_detail_ontest_qa_question"
+                    android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:text="我有能力克服各种困难？"
+	    			android:textColor="#444444"
+	    			android:textSize="@dimen/text_size_medium"
+                    />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:paddingTop="20dp"
+	    	android:paddingLeft="40dp"
+	    	android:paddingRight="40dp"
+	    	android:gravity="center"
+            >
+            
+            <ListView 
+                android:id="@+id/news_detail_ontest_qa_list"
+                android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    		android:cacheColorHint="#a3a3a3"
+                android:divider="#a3a3a3"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                ></ListView>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+	
+    <RelativeLayout 
+        android:id="@+id/news_detail_ontest_relayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_detail_ontest_qa_next"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <TextView 
+            android:id="@+id/news_detail_ontest_qa_next_btn"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:text="下一题"
+        	android:textColor="#eb4765"
+        	android:gravity="center"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

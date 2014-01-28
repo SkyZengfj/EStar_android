@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical"
+        android:background="#fff2f2f2"
+        android:layout_weight="1">
+        
+        <ImageView
+            android:id="@+id/praise_list_pic_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+        
+        <TextView 
+            android:id="@+id/praise_list_user_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/praise_list_pic_1"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:background="#fff2f2f2"
+        android:layout_weight="1">
+        
+        <ImageView
+            android:id="@+id/praise_list_pic_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+        
+        <TextView 
+            android:id="@+id/praise_list_user_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/praise_list_pic_2"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:background="#fff2f2f2"
+        android:layout_weight="1">
+        
+        <ImageView
+            android:id="@+id/praise_list_pic_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+        
+        <TextView 
+            android:id="@+id/praise_list_user_name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/praise_list_pic_3"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:background="#fff2f2f2"
+        android:layout_weight="1">
+        
+        <ImageView
+            android:id="@+id/praise_list_pic_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+        
+        <TextView 
+            android:id="@+id/praise_list_user_name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/praise_list_pic_4"/>
+        
+    </RelativeLayout>
+        
+</LinearLayout>

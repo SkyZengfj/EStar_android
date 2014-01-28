@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a6a6a6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/action_home_list_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/action_home_listitem_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxWidth="220dp"
+                    android:singleLine="true"
+                    android:text="action name"
+                    android:textColor="#444444"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/action_home_list_item_state_bg" />
+
+                    <TextView
+                        android:id="@+id/action_home_listitem_catagory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_size_micro" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_home_list_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="活动时间:"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_time_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="至"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_time_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="截止"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/action_home_listitem_textview_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="2dp"
+                    android:textColor="#909091"
+                    android:textSize="@dimen/text_size_micro" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/action_home_list_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp"
+                 >
+
+                <!--
+                <ImageView
+                    android:id="@+id/action_home_list_item_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_default_action_list_item" /> -->
+
+                <TextView
+                    android:id="@+id/action_home_list_item_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#909091"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="活动"
+                    android:textSize="@dimen/text_size_micro" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/action_home_list_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/action_home_list_item_bottom_bg"
+                android:orientation="horizontal"
+                android:paddingRight="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/action_home_list_item_istask_framelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/action_home_list_item_award_bg"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/action_home_list_item_award_bg" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_textview_istask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="任务"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/action_home_list_item_award_framelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/action_home_list_item_award_bg"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/action_home_list_item_award_bg" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_textview_award"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#909091"
+                        android:textSize="@dimen/text_size_micro" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_textview_joined_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="#ed4165"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6dp"
+                        android:text="已参与"
+                        android:textColor="#888889"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/action_home_list_item_interested" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_textview_interested_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6dp"
+                        android:textColor="#ed4165"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/action_home_list_item_comments" />
+
+                    <TextView
+                        android:id="@+id/action_home_list_item_textview_comments_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6dp"
+                        android:textColor="#ed4165"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff292e3b"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/shopGiftListFilterListItem_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="#ff797d85"
+        android:textSize="@dimen/text_size_nomal" />
+
+</LinearLayout>

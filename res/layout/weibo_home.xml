@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#ffffffff"
+	    android:orientation="vertical" >
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/top_bg" >
+	
+	        <FrameLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <ImageButton
+	                android:id="@+id/weibo_home_imageButton_dynamic_menu"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/top_btn_selector" />
+	
+	            <ImageView
+	                android:id="@+id/weibo_home_imageview_dynamic_menu"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/top_btn_menu" />
+	        </FrameLayout>
+	
+	        <TextView
+	            android:id="@+id/weiboHome_textview_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="全部"
+	            android:textColor="#FFFFFFFF"
+	            android:textSize="@dimen/text_size_medium"
+	            android:clickable="true"/>
+	        
+	        <ImageView
+	            android:id="@+id/weiboHome_top_triangle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/top_btn_bg_triangle"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/weiboHome_textview_name" />
+	
+	        <FrameLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true" >
+	
+	            <ImageButton
+	                android:id="@+id/weiboHome_imageButton_edit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/top_btn_selector" />
+	
+	            <ImageView
+	                android:id="@+id/weiboHome_imageview_edit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/top_btn_edit" />
+	        </FrameLayout>
+	        
+	    </RelativeLayout>
+	
+	    <ListView
+	        android:id="@+id/weiboHome_listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:scrollbars="none"
+	        android:cacheColorHint="#00000000"
+	        android:fadingEdge="none"
+	        android:fadingEdgeLength="0dp"
+	        android:divider="#00000000">
+	    </ListView>
+	
+	    <com.mcds.app.android.estar.component.TabNavigateComponent
+	        android:id="@+id/weiboHome_tabNavigate"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </com.mcds.app.android.estar.component.TabNavigateComponent>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/weiboHome_msgTypeList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#ffffffff"
+        android:visibility="invisible">
+	    
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_allActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_allActivity_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_all_activity_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全部"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_allActivity_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_allActivity_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_affirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_affirmation_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_affirmation_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="肯定"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_affirmation_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_affirmation_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_blessing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_blessing_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_blessing_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="祝福"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_blessing_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_blessing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_message_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_message_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="信息"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_message_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_message_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_help_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_help_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="帮助"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_help_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_help_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/weiboHome_msgTypeList_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg">
+	        
+            <ImageView
+                android:id="@+id/weiboHome_msgTypeList_activity_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_activity_icon"
+                android:layout_centerVertical="true"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="活动"
+	            android:textColor="#ff001c55"
+	            android:textSize="@dimen/text_size_medium"
+	            android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/weiboHome_msgTypeList_activity_icon"/>
+            
+            <ImageView 
+                android:id="@+id/weiboHome_msgTypeList_activity_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</FrameLayout>

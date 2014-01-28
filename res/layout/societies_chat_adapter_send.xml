@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/societies_chat_adapter_send_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/work_home_matter_member_name_image" />
+
+    <TextView
+        android:id="@+id/societies_chat_adapter_send_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/societies_chat_adapter_send_image"
+        android:background="@drawable/work_chat_adapter_send_background"
+        android:textColor="#FF0000" />
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <RelativeLayout
+        android:id="@+id/action_detail_comments_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/action_detail_comments_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_frame_dynamic_details_top_return" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/action_detail_comments_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="活动评论"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/action_detail_comments_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="#dfdfdf"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+        android:layout_above="@+id/action_detail_comments_bottom_layout"
+        android:layout_below="@+id/action_detail_comments_layout_top" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/action_detail_comments_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/action_detail_onlinehelp_replay_bottom_layout_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/action_detail_comments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_detail_comments_imput_bg" />
+
+            <ImageView
+                android:id="@+id/action_detail_comments_smile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/action_detail_onlinehelp_replay_bottom_layout_tipimg" />
+
+            <ImageView
+                android:id="@+id/action_detail_comments_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/action_detail_onlinehelp_replay_bottom_layout_addimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/action_detail_action_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" 
+            android:visibility="gone"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/actionvPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

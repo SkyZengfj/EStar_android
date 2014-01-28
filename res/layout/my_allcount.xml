@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+        <TextView
+            android:id="@+id/my_txt_allCountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的积分"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+        <ImageButton 
+		        android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:background="@drawable/top_btn_bg_triangle"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/my_txt_allCountTitle" />
+    </RelativeLayout>
+	
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+        <LinearLayout 
+		    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout 
+		    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+             <TextView  
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:textSize="@dimen/text_size_small"
+		             android:text="累计获得：99999"/>
+             <TextView  
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:textSize="@dimen/text_size_small"
+		             android:text="当前获得：999"/>
+		</LinearLayout>
+		
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:background="@drawable/my_icon_edittext_bg"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_marginRight="10dip"
+		             android:orientation="horizontal">
+            <LinearLayout 
+            		 android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_weight="1"
+		             android:orientation="vertical">
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#242424"
+		                 android:text="参与活动  “公司发展历程测试。。。”"/>
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="2014-01-05 11:00"/>
+		             
+            </LinearLayout>
+            <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#b20000"
+		                 android:layout_marginRight="10dip"
+		                 android:layout_gravity="center"
+		                 android:text="100"/>
+        </LinearLayout>
+        
+        
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:background="@drawable/my_icon_edittext_bg"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_marginRight="10dip"
+		             android:orientation="horizontal">
+            <LinearLayout 
+            		 android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_weight="1"
+		             android:orientation="vertical">
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#242424"
+		                 android:text="参与活动  “公司发展历程测试。。。”"/>
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="2014-01-05 11:00"/>
+		             
+            </LinearLayout>
+            <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#b20000"
+		                 android:layout_marginRight="10dip"
+		                 android:layout_gravity="center"
+		                 android:text="100"/>
+        </LinearLayout>
+        
+         
+          <LinearLayout 
+            android:layout_width="match_parent"
+            android:background="@drawable/my_icon_edittext_bg"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_marginRight="10dip"
+		             android:orientation="horizontal">
+            <LinearLayout 
+            		 android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_weight="1"
+		             android:orientation="vertical">
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#242424"
+		                 android:text="参与活动  “公司发展历程测试。。。”"/>
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="2014-01-05 11:00"/>
+		             
+            </LinearLayout>
+            <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#b20000"
+		                 android:layout_marginRight="10dip"
+		                 android:layout_gravity="center"
+		                 android:text="100"/>
+        </LinearLayout>
+        
+          
+           <LinearLayout 
+            android:layout_width="match_parent"
+            android:background="@drawable/my_icon_edittext_bg"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_marginRight="10dip"
+		             android:orientation="horizontal">
+            <LinearLayout 
+            		 android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginLeft="10dip"
+		             android:layout_marginTop="10dip"
+		             android:layout_weight="1"
+		             android:orientation="vertical">
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#242424"
+		                 android:text="参与活动  “公司发展历程测试。。。”"/>
+		             <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:text="2014-01-05 11:00"/>
+		             
+            </LinearLayout>
+            <TextView 
+		                 android:layout_width="wrap_content"
+		                 android:layout_height="wrap_content"
+		                 android:textColor="#b20000"
+		                 android:layout_marginRight="10dip"
+		                 android:layout_gravity="center"
+		                 android:text="100"/>
+        </LinearLayout>
+        
+      </LinearLayout>  
+	</ScrollView>
+    
+
+</LinearLayout>

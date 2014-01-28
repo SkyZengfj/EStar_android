@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff252933"
+    android:orientation="vertical" >
+    
+        <ImageView 
+	        android:id="@+id/weibo_sliding_menu_imageView_user_avatar"
+	        android:layout_width="130dp"
+	        android:layout_height="130dp"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="15dp"
+	        android:visibility="gone"
+	        android:background="#ff00ffff"/>
+        
+        <TextView 
+            android:id="@+id/weibo_sliding_menu_textView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速导航"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="left"/>
+        
+        <TextView 
+            android:id="@+id/weibo_sliding_menu_textView_userpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速导航"
+            android:visibility="gone"
+            android:textColor="#ff32afef"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp">
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_sendMessage"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dp"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendMessage_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_01"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_sendMessage_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="发信息"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_sendMessage_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendMessage_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_sendBlessing"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendBlessing_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_02"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_sendBlessing_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="发祝福"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_sendBlessing_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendBlessing_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_sendAffirmation"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendAffirmation_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_03"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_sendAffirmation_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="发肯定"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_sendAffirmation_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendAffirmation_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_sendHelp"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendHelp_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_04"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_sendHelp_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="求帮助"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_sendHelp_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_sendHelp_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_alert"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_alert_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_05"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_alert_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="提醒"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_alert_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_alert_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_work"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_work_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_6"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_work_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="工作"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_work_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_work_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_group"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_group_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_07"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_group_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="社团"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_group_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_group_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_friend"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_friend_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_08"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_friend_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="找朋友"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_friend_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_friend_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_integration"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_integration_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_09"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_integration_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="积分换礼"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_integration_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_integration_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_order"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_order_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_10"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_order_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="订单管理"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_order_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_order_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_shoppingcar"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_shoppingcar_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_11"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_shoppingcar_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="购物车"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_shoppingcar_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_shoppingcar_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_checkUpdate"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_checkUpdate_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_12"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_checkUpdate_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="检查更新"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_checkUpdate_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_checkUpdate_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_cleanCache"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_cleanCache_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_13"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_cleanCache_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="清除缓存"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_cleanCache_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_cleanCache_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_about"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_about_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_14"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_about_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="关于"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_about_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_about_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+		        
+		        <RelativeLayout
+		            android:id="@+id/weibo_sliding_menu_relativeLayout_signOut"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/shortcur_bg_selector">
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_signOut_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:background="@drawable/shortcur_15"
+		                android:layout_centerVertical="true"/>
+		            
+		            <TextView 
+			            android:id="@+id/weibo_sliding_menu_linearLayout_signOut_textView"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="退出登录"
+			            android:textColor="#ff6d717b"
+			            android:textSize="@dimen/text_size_large"
+			            android:layout_marginLeft="20dp"
+			            android:layout_centerVertical="true"
+			            android:layout_toRightOf="@id/weibo_sliding_menu_linearLayout_signOut_icon"/>
+		            
+		            <ImageView 
+		                android:id="@+id/weibo_sliding_menu_linearLayout_signOut_arrow"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginRight="15dp"
+		                android:src="@drawable/weibo_sliding_menu_arrow"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"/>
+		            
+		        </RelativeLayout>
+
+            </LinearLayout>
+            
+        </ScrollView>
+        
+</LinearLayout>

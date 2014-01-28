@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/my_findfriends_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageButton
+                android:id="@+id/my_icon_findfrieds_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_frame_dynamic_details_top_return" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/my_findfriend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="找朋友"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_findfriend_top_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_heart_test_switch_layout_bg" >
+
+        <TextView
+            android:id="@+id/my_findfriends_DatingHall"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="交友大厅"
+            android:textColor="#eb4666"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/my_findfriend_GuessYouKnow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="猜你认识"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/my_findfriend_CommonInterest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="兴趣相同"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+        
+        <TextView
+            android:id="@+id/my_findfriend_Grassroots"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="人气草根"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_medium" />
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/news_heart_test_switch_cursor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_findFriendPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#000000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

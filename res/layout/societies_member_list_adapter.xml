@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/soieties_member_list_adapter_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/societies_member_list_adapter_image" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/soieties_member_list_adapter_image" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/soieties_member_list_adapter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白雪荣" />
+
+            <ImageView
+                android:id="@+id/soieties_member_list_adapter_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/soieties_member_list_adapter_name"
+                android:src="@drawable/societies_member_list_adapter_sex_male" />
+
+            <TextView
+                android:id="@+id/soieties_member_list_adapter_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/soieties_member_list_adapter_name"
+                android:text="总公司副总经理" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/soieties_member_list_adapter_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="@drawable/societies_member_list_adapter_status0" />
+    </RelativeLayout>
+
+</RelativeLayout>

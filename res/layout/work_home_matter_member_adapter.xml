@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <FrameLayout
+            android:id="@+id/adapter_item_framelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/adapter_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/work_home_matter_member_name_image0" 
+            android:focusable="false"/>
+
+            <ImageView
+                android:id="@+id/adapter_item_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/work_matter_member_delete_icon"
+            android:focusable="false" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/adapter_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adapter_item_framelayout"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</LinearLayout>

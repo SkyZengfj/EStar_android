@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:id="@+id/news_test_big_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/news_test_big_imgs_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/news_test_big_title_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/news_news_big_title_bg"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_size_large" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/newsTest_listView_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="#ffdddddd"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dp"
+                android:scrollbars="none"
+                android:paddingTop="5dp" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

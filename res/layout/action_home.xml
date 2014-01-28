@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/action_home_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff2f2f2"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <ImageButton
+                    android:id="@+id/action_home_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_frame_dynamic_details_top_return" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/actionHome_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="全部活动"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageButton
+                android:id="@+id/action_home_type_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/actionHome_textview_name"
+                android:background="@drawable/top_btn_bg_triangle" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <ImageView
+                    android:id="@+id/actionHome_imageview_pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/action_top_btn_bg_selector_img"
+                    android:gravity="center" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/actionHome_listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#fff2f2f2"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp" >
+        </ListView>
+
+        <com.mcds.app.android.estar.component.TabNavigateComponent
+            android:id="@+id/actionHome_tabNavigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.mcds.app.android.estar.component.TabNavigateComponent>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionHome_msgTypeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/action_home_top_bg"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/actionHome_msgTypeList_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/action_home_top_selected_bg"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="全部活动"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <ImageView
+                android:id="@+id/action_home_top_quanbuhuodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/action_home_top_selected_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/actionHome_msgTypeList_myAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_top_unselected_bg"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="我参与的活动"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <ImageView
+                android:id="@+id/action_home_top_wodehuodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/action_home_top_unselected_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/actionHome_msgTypeList_deploy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_top_unselected_bg"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="我发布的活动"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <ImageView
+                android:id="@+id/action_home_top_fabudehuodong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/action_home_top_unselected_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

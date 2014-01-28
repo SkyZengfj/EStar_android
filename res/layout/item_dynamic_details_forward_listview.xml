@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp "
+    android:background="#fff8f8f8" >
+    
+    <ImageView 
+        android:id="@+id/dynamic_details_forward_list_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/main_frame_listview_default_avatar"/>
+    
+    <RelativeLayout
+        android:id="@+id/dynamic_details_forward_list_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dynamic_details_forward_list_avatar">
+        
+        <TextView 
+            android:id="@+id/dynamic_details_forward_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size_medium"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_bubble_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/dynamic_details_forward_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="#ff999999"
+        android:layout_toRightOf="@id/dynamic_details_forward_list_avatar"
+        android:layout_below="@+id/dynamic_details_forward_list_info"
+        android:text=""/>
+    
+    <TextView
+        android:id="@+id/dynamic_details_forward_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="#ff999999"
+        android:layout_toRightOf="@id/dynamic_details_forward_list_avatar"
+        android:layout_below="@+id/dynamic_details_forward_list_content"
+        android:text=""/>"
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="clip_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/work_home_matter_member_list_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_navigation_cancel_icon" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_member_list_title_button_background0"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我关注的"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_member_list_title_button_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/work_home_matter_member_list_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_matter_member_list_relative_layout"
+        android:background="@drawable/work_home_member_list_title_search_bar_background" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/work_home_member_list_title_search_bar_icon"
+            android:hint="搜索姓名" />
+    </FrameLayout>
+
+    <ExpandableListView
+        android:id="@+id/eListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_matter_member_list_search_bar" >
+    </ExpandableListView>
+
+</RelativeLayout>

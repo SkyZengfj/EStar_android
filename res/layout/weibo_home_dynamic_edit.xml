@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+<!--
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/dynamic_detail_imageButton_dynamic_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <TextView
+                    android:id="@+id/dynamic_detail_textView_dynamic_menu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size_medium" />
+            </FrameLayout>
+-->
+            <TextView
+                android:id="@+id/dynamic_detail_textview_dynamic_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="肯定"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_top_triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/dynamic_detail_textview_dynamic_type_name"
+                android:background="@drawable/top_btn_bg_triangle" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" >
+
+                <ImageButton
+                    android:id="@+id/dynamic_detail_imageButton_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <TextView
+                    android:id="@+id/dynamic_detail_imageview_edit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size_medium" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff2f2f2">
+
+            <ImageView
+                android:id="@+id/dynamic_detail_edit_user_avatar_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dynamic_detail_user_avatar" />
+
+            <EditText
+                android:id="@+id/dynamic_detail_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/dynamic_detail_edit_user_avatar_pic"
+                android:background="@drawable/dynamic_detail_edit_textview_bg"
+                android:gravity="top"
+                android:padding="10dp"
+                android:maxLength="120"/>
+            
+            <LinearLayout
+                 android:id="@+id/weiboHomeDynamiEdit_photoContainer4"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" 
+                 android:visibility="gone"
+                 android:layout_marginLeft="5dp"
+                 android:layout_toRightOf="@id/dynamic_detail_edit_user_avatar_pic"
+                 android:layout_below="@id/dynamic_detail_edit_text">
+				
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/dynamic_detail_edit_btn_binner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#fff2f2f2" >
+
+                    <ImageView
+                        android:id="@+id/dynamic_detail_edit_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:src="@drawable/dynamic_detail_edit_img_btn" />
+
+                    <ImageView
+                        android:id="@+id/dynamic_detail_edit_btn_at"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/dynamic_detail_edit_btn_img"
+                        android:src="@drawable/dynamic_detail_edit_at_btn" />
+
+                    <ImageView
+                        android:id="@+id/dynamic_detail_edit_btn_matter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/dynamic_detail_edit_btn_at"
+                        android:src="@drawable/dynamic_detail_edit_matter_btn" />
+
+                    <ImageView
+                        android:id="@+id/dynamic_detail_edit_btn_affirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/dynamic_detail_edit_btn_matter"
+                        android:src="@drawable/dynamic_detail_edit_affirmation_btn"/>
+
+                   	<TextView
+                        android:id="@+id/dynamic_detail_edit_textview_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="120个字"
+                        android:textColor="#ffafafaf"
+                        android:textSize="@dimen/text_size_small" />
+                   	<TextView
+                        android:id="@+id/weiboHomeDynamiEdit_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="更多模板"
+                        android:visibility="gone"
+                        android:textColor="#ffafafaf"
+                        android:textSize="@dimen/text_size_small" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/dynamic_detail_action_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/weiboHomeDynamiEdit_photoContainer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" 
+                        android:visibility="gone">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/weiboHomeDynamiEdit_photoContainer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/weiboHomeDynamiEdit_photoContainer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                        
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/weiboHomeDynamiEdit_photoContainer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                        
+                    </LinearLayout>
+                    
+                    <android.support.v4.view.ViewPager
+				        android:id="@+id/vPager"
+				        android:layout_width="match_parent"
+				        android:layout_height="150dp"
+				        android:visibility="gone"
+				        android:layout_gravity="bottom"/>
+                    
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.mcds.app.android.estar.component.TabNavigateComponent
+            android:id="@+id/weiboHome_tabNavigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.mcds.app.android.estar.component.TabNavigateComponent>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dynamic_detail_msgTypeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/dynamic_detail_msgTypeList_affirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_affirmation_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_affirmation_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dynamic_detail_msgTypeList_affirmation_icon"
+                android:text="肯定"
+                android:textColor="#ff001c55"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_affirmation_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dynamic_detail_msgTypeList_blessing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_blessing_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_blessing_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dynamic_detail_msgTypeList_blessing_icon"
+                android:text="祝福"
+                android:textColor="#ff001c55"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_blessing_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dynamic_detail_msgTypeList_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_message_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_message_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dynamic_detail_msgTypeList_message_icon"
+                android:text="信息"
+                android:textColor="#ff001c55"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_message_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dynamic_detail_msgTypeList_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_help_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_help_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dynamic_detail_msgTypeList_help_icon"
+                android:text="帮助"
+                android:textColor="#ff001c55"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_help_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dynamic_detail_msgTypeList_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_frame_top_msg_type_top_item_bg"
+            android:clickable="true" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_activity_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/msg_type_list_activity_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dynamic_detail_msgTypeList_activity_icon"
+                android:text="活动"
+                android:textColor="#ff001c55"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/dynamic_detail_msgTypeList_activity_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/msg_type_selected_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

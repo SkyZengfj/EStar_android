@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/contact_list_imagebutton_select_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_image_button_unselected_mark_icon"
+        android:layout_centerVertical="true"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/contact_list_imageview_avatar_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/contact_list_imagebutton_select_mark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/contact_list_imageview_avatar_pic"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/weiboHome_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size_nomal"
+            android:text=""
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/weiboHome_contact_post"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#ffbbbbbb"
+            android:textSize="@dimen/text_size_small"
+            android:text=""
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

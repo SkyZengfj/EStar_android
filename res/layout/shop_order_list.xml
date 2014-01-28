@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="全部订单"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shop_list_btn_type_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/shopOrderList_btnThisMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shop_list_btn_type_selected_bg" >
+
+            <TextView
+                android:id="@+id/shopOrderList_txtThisMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="近一个月订单"
+                android:textColor="#ffeb4666" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shopOrderList_btnOlder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shop_list_btn_type_bg" >
+
+            <TextView
+                android:id="@+id/shopOrderList_txtOlder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="一个月前订单"
+                android:textColor="#ff444444" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff2f2f2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/shop_gift_list_header" />
+
+        <ListView
+            android:id="@+id/shopOrderList_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#ffffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/shop_shopcar_spliter"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

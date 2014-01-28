@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/action_detail_imageButton_dynamic_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <TextView
+                    android:id="@+id/action_detail_textView_dynamic_menu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size_medium" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/action_detail_textview_dynamic_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="回复求助"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/text_size_medium" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" >
+
+                <ImageButton
+                    android:id="@+id/action_detail_imageButton_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/top_btn_selector" />
+
+                <TextView
+                    android:id="@+id/action_detail_imageview_edit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/text_size_medium" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff2f2f2" >
+
+            <ImageView
+                android:id="@+id/action_detail_edit_user_avatar_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/dynamic_detail_user_avatar" />
+
+            <EditText
+                android:id="@+id/action_detail_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/action_detail_edit_user_avatar_pic"
+                android:background="@drawable/dynamic_detail_edit_textview_bg"
+                android:gravity="top"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/dynamic_detail_edit_btn_binner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#fff2f2f2" >
+
+                    <ImageView
+                        android:id="@+id/action_detail_edit_btn_affirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/dynamic_detail_edit_affirmation_btn" />
+
+                    <TextView
+                        android:id="@+id/action_detail_edit_textview_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="120个字"
+                        android:textColor="#ffafafaf"
+                        android:textSize="@dimen/text_size_small" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_detail_onlinehelp_action_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/onlinehelp_vPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="bottom" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.mcds.app.android.estar.component.TabNavigateComponent
+            android:id="@+id/weiboHome_tabNavigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.mcds.app.android.estar.component.TabNavigateComponent>
+    </LinearLayout>
+
+</FrameLayout>

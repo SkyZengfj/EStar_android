@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/news_heart_test_start_relayout_top"
+        android:layout_alignParentTop="true"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/top_bg" >
+	
+	    <FrameLayout
+	    	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <ImageButton
+	        	android:id="@+id/news_heart_test_start_back_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/main_frame_dynamic_details_top_return" 
+	            />
+	        
+	     </FrameLayout>
+	
+	     <TextView
+	     	android:id="@+id/newsTest_start_textview_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="测试"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="@dimen/text_size_medium"
+	        android:clickable="true"/>
+	        
+	
+	     <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true" >
+	
+	        <ImageButton
+	        	android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/top_btn_selector" />
+	            
+	      </FrameLayout>
+	        
+	</RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/news_heart_test_start_layout_img"
+        android:layout_below="@+id/news_heart_test_start_relayout_top"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#ffffff"
+    	android:layout_margin="5dp"
+        >
+        
+        <ImageView 
+            android:id="@+id/news_heart_test_start_img"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+            />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#dddddd"
+    	android:orientation="vertical"
+    	android:layout_alignParentBottom="true"
+    	android:layout_below="@+id/news_heart_test_start_layout_img"
+        >
+        
+        <TextView 
+            android:id="@+id/news_heart_test_start_content"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:textColor="#444444"
+    		android:padding="5dp"
+    		android:textSize="@dimen/text_size_nomal"
+    		android:text="由谁创建 林小敏 于 2012-05-31 11:20:13 影响版本 Trunk由谁解决 于 2012-05-31 14:12:32  解决版本 Trunk 解决方案 已解决  由谁关闭 林小敏 于 2012-05-31 18:14:43 最后修改 林小敏 于 2012-05-31 18:14:43 "
+            />
+        
+        <ImageView 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+    		android:background="@drawable/news_heart_test_start_content_line"
+            />
+        
+        <TextView 
+            android:id="@+id/news_heart_test_start_btn"
+            android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="#ffffff"
+    		android:textSize="@dimen/text_size_nomal"
+    		android:background="@drawable/news_heart_test_start_btn"
+    		android:text="开始测试"
+            />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/action_detail_ontest_qa_item_answer_muti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_detail_ontest_qa_answeritem_bg_unselected"
+            android:gravity="center"
+            android:text="A.旅游"
+            android:paddingLeft="10dp"
+            android:textColor="#444444"
+            android:textSize="@dimen/text_size_nomal" />
+    </LinearLayout>
+
+</FrameLayout>

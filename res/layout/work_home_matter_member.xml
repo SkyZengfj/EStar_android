@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/work_home_matter_member_background_bottom" >
+
+    <RelativeLayout
+        android:id="@+id/workHome_matter_member_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageButton
+                android:id="@+id/work_home_matter_member_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/work_home_navigation_cancel_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/work_home_matter_member_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="事项成员"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/work_home_matter_member_name_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workHome_matter_member_top"
+        android:background="@drawable/work_home_matter_member_name_background"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/work_home_matter_member_name_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/work_home_matter_member_name_image" />
+
+            <TextView
+                android:id="@+id/work_home_matter_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/work_home_matter_member_name_image"
+                android:text="李刚"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/work_home_matter_member_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/work_home_matter_member_name_image"
+                android:text="项目经理" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/work_home_matter_member_name_arrow_icon"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:text="管理员"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/work_home_matter_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_home_matter_member_name_bar"
+        android:layout_margin="10dp"
+        android:background="@drawable/work_home_matter_member_list_background"
+        android:numColumns="4" >
+    </GridView>
+
+</RelativeLayout>

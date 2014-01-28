@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff6ebcd" >
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#fff6ebcd">
+	    
+    <RelativeLayout
+        android:id="@+id/workHome_task_details_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+
+        <TextView
+            android:id="@+id/workHome_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="任务详情"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/main_frame_dynamic_details_top_more"/>
+        </FrameLayout>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ff000000"
+        android:editable="true"
+        android:paddingLeft="10dp"
+        android:text="找场地"
+        android:background="@drawable/work_home_matter_detail_textview_white_frame"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_nomal"
+        android:layout_below="@id/workHome_task_details_top"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_task_time_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff8c8c8c"
+        android:editable="true"
+        android:background="@drawable/work_home_matter_detail_textview_white_frame"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_small"
+        android:layout_below="@id/work_home_task_detail_textview_title"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_manager_title"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff444444"
+        android:background="@drawable/work_home_matter_detail_textview_title_frame"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        android:editable="false"
+        android:text="负责人"
+        android:layout_below="@id/work_home_task_detail_textview_task_time_info"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_manager_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ff8c8c8c"
+        android:background="@drawable/work_home_matter_detail_textview_white_frame"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_nomal"
+        android:editable="true"
+        android:layout_toRightOf="@id/work_home_task_detail_textview_manager_title"
+        android:layout_below="@id/work_home_task_detail_textview_task_time_info"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_executor_title"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff444444"
+        android:background="@drawable/work_home_matter_detail_textview_title_frame"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        android:editable="false"
+        android:text="执行"
+        android:layout_below="@id/work_home_task_detail_textview_manager_title"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_member_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ff8c8c8c"
+        android:background="@drawable/work_home_matter_detail_textview_white_frame"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_nomal"
+        android:editable="true"
+        android:layout_toRightOf="@id/work_home_task_detail_textview_executor_title"
+        android:layout_below="@id/work_home_task_detail_textview_manager_name"/>
+    
+    <TextView 
+        android:id="@+id/work_home_task_detail_textview_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff8c8c8c"
+        android:background="@drawable/work_home_matter_detail_textview_white_frame"
+        android:textSize="@dimen/text_size_nomal"
+        android:editable="true"
+        android:gravity="top"
+        android:layout_below="@id/work_home_task_detail_textview_executor_title"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/on_working_mark"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"/>
+   
+    </RelativeLayout>
+    
+    </FrameLayout>
+    
+</LinearLayout>

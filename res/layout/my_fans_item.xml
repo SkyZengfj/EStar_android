@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <!-- 每一行信息 -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/btn_1_selector"
+	            android:layout_marginTop="5dip"
+	            android:focusable="false"
+	            android:orientation="horizontal">
+	            <ImageView 
+	                android:id="@+id/my_fans_headPic"
+	                android:layout_width="45dip"
+	                android:layout_height="45dip"
+	                android:focusable="false"
+	                android:layout_gravity="center"
+	                android:src="@drawable/my_icon_fans_headpic"/>
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:focusable="false"
+	                android:orientation="vertical">
+	                <LinearLayout 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:focusable="false"
+	                    android:orientation="horizontal">
+	                    <TextView 
+	                    android:id="@+id/my_fans_userName"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:focusable="false"
+		                android:layout_marginLeft="10dip"
+		                android:layout_gravity="center_vertical"
+		                android:textColor="#242424"
+		                android:text="陈仁"/>
+	                    <ImageView 
+	                        android:visibility="invisible"
+	                        android:id="@+id/my_fans_sex_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:focusable="false"
+		                android:layout_marginLeft="10dip"
+		                android:layout_gravity="center_vertical"/>
+	                </LinearLayout>
+		            <TextView 
+		                android:id="@+id/my_fans_attentionWork"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:focusable="false"
+		                android:layout_marginLeft="10dip"
+		                android:layout_gravity="center_vertical"
+		                android:text="总公司副总经理"/>
+	            </LinearLayout>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:focusable="false"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"/>
+	            <ImageButton 
+	                android:id="@+id/my_fans_relation"
+	                android:layout_width="wrap_content"
+	                android:focusable="true"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="10dip"
+	                android:layout_marginRight="5dip"/>
+	             
+	        </LinearLayout>
+	        <!-- 横线 -->
+	        <LinearLayout 
+		     android:layout_width="match_parent"
+		     android:focusable="false"
+		     android:layout_height="wrap_content"
+		     android:layout_marginTop="3dip"
+		     android:background="@drawable/my_icon_remind_line">
+			 </LinearLayout>
+
+</LinearLayout>

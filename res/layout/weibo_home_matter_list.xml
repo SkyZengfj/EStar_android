@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffffff">
+    
+    <RelativeLayout
+        android:id="@+id/weiboHome_matter_select_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+<!--
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_btn_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_frame_dynamic_details_top_return" />
+        </FrameLayout>
+-->
+        <TextView
+            android:id="@+id/weiboHome_matter_select_textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:text="选择事项"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size_medium" />
+        
+    </RelativeLayout>
+    
+    <ExpandableListView
+        android:id="@+id/weiboHome_matter_select_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false">
+        
+    </ExpandableListView>
+    
+</LinearLayout>

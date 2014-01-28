@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/my_activity_notify_item_timelayout"
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_activity_notify_timebg_left"
+            />
+        
+        <TextView 
+            android:id="@+id/my_activity_notify_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:background="@drawable/my_activity_notify_timebg_mid"
+            android:textSize="@dimen/text_size_micro"
+            android:text="2014-1-22"
+            />
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_activity_notify_timebg_right"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/my_activity_notify_item_contentlayout"
+        android:paddingLeft="35dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        
+        <ImageView 
+            android:layout_height="match_parent"
+            android:layout_width="2dp"
+            android:background="@drawable/my_activity_notify_content_horline"
+            />
+        
+        <LinearLayout 
+            android:background="@drawable/my_activity_notify_content_bg"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginRight="5dp"
+            >
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+                >
+                
+                <TextView 
+                    android:id="@+id/my_activity_notify_item_state"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/text_size_nomal"
+		            android:text="即将开始"
+		            android:textColor="#000000"
+		            android:paddingLeft="10dp"
+                    />
+                
+                <TextView 
+                    android:id="@+id/my_activity_notify_item_hours"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/text_size_nomal"
+		            android:text="10:11"
+		            android:textColor="#00a3d9"
+		            android:paddingRight="10dp"
+                    />
+                
+            </RelativeLayout>
+            
+            <TextView 
+                android:id="@+id/my_activity_notify_item_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="@dimen/text_size_nomal"
+	            android:text="我感兴趣的活动与12天后开始报名"
+	            android:paddingLeft="10dp"
+	            android:textColor="#444444"
+	            />
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_0_bg">#00000000</color>
+    <color name="btn_0_bg_selected">#22000000</color>
+    <color name="btn_1_bg">#ffffffff</color>
+    <color name="btn_1_bg_selected">#ffeeeeee</color>
+    <color name="news_home_ic_1_bg">#ff7f98de</color>
+    <color name="news_home_ic_1_bg_selected">#ff4d72da</color>
+    <color name="news_home_ic_2_bg">#ffee4c6e</color>
+    <color name="news_home_ic_2_bg_selected">#ffec1542</color>
+    <color name="news_home_ic_3_bg">#ff78d1f3</color>
+    <color name="news_home_ic_3_bg_selected">#ff40bfef</color>
+    <color name="progress">#33AFE8</color>
+
+</resources>

@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_home_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff252933"
+    android:orientation="vertical"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_catagory_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/action_home_top_unselected_bg"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/action_home_menu_icon_catagory"
+            />
+        
+        <TextView 
+            android:paddingLeft="15dip"
+            android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_nomal"
+            android:text="活动分类"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_catagory_selected"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:gravity="right"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginRight="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_down_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_arrow_down"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_sub_catagory_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="#252931"
+        android:visibility="gone"
+        >
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_sub_catagory_quanbu"
+            android:paddingLeft="15dip"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        
+        
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_catagory_gongsihuodong"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="公司活动"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_catagory_yulehuodong"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="娱乐活动"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_catagory_diaochawenjuan"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="调查问卷"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_catagory_zaixianceshi"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="在线测试"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_catagory_zaixianqiuzhu"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="在线求助"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/action_home_menu_item_catagory_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_home_menu_icon_line"
+        android:layout_margin="10dp"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:background="@drawable/action_home_top_unselected_bg"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_icon_state"
+            />
+        
+        <TextView 
+            android:paddingLeft="15dip"
+            android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_nomal"
+            android:text="活动状态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_state_selected"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:gravity="right"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginRight="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_down_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_arrow_down"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/action_home_menu_item_sub_state_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:background="#252931"
+        >
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_sub_state_quanbu"
+            android:paddingLeft="15dip"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_state_jijiangkaishi"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="即将开始"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_state_zhengzaijinxing"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="正在进行"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_state_yijingjieshu"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="已经结束"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/action_home_menu_item_state_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            android:layout_above="@+id/action_home_menu_item_reward_layout"
+            android:layout_margin="10dp"
+            />
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_reward_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:background="@drawable/action_home_top_unselected_bg"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_icon_reward"
+            />
+        
+        <TextView 
+            android:paddingLeft="15dip"
+            android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_nomal"
+            android:text="奖励"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_reward_selected"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:gravity="right"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginRight="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_down_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_arrow_down"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/action_home_menu_reward_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            android:layout_below="@+id/action_home_menu_item_reward_layout"
+            android:layout_margin="10dp"
+            />
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_sub_reward_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:background="#252931"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_reward_quanbu"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="全部"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_reward_jifen"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="积分"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_reward_xunzang"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="勋章"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_reward_qita"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="其他"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:background="@drawable/action_home_top_unselected_bg"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/action_home_menu_icon_task"
+            />
+        
+        <TextView 
+            android:paddingLeft="22dip"
+            android:gravity="center"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_nomal"
+            android:text="任务活动"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <TextView 
+            android:id="@+id/action_home_menu_item_task_selected"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:gravity="right"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/text_size_micro"
+            android:text="全部"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/my_icon_go"
+            android:layout_marginRight="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/action_home_menu_arrow_down_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/action_home_menu_arrow_down"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/action_home_menu_item_sub_task_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="#252931"
+        android:visibility="gone"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_task_quanbu"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="全部"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_task_yes"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="是"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_home_menu_icon_line"
+            />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/action_home_menu_item_sub_task_no"
+		        android:layout_gravity="center_vertical"
+		        android:textSize="@dimen/text_size_micro"
+	            android:text="否"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+            	/>
+            
+            <LinearLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:layout_weight="1"
+	            android:layout_gravity="center_vertical"
+	            android:visibility="gone"
+            	>
+            
+            	<ImageView 
+	                android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/action_home_menu_subarrow"
+                	/>
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

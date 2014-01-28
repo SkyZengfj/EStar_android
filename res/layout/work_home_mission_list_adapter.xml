@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/work_home_mission_list_adapter_item_background" >
+
+        <ImageView
+            android:id="@+id/work_home_mission_status_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/work_home_mission_status_icon" >
+
+            <TextView
+                android:id="@+id/top_text0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#738DA0"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/leader_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/top_text0"
+                android:textColor="#738DA0"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/top_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="截止"
+                android:textColor="#738DA0"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/top_text1"
+                android:textColor="#738DA0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/relative_layout_top"
+            android:layout_alignRight="@id/relative_layout_top"
+            android:layout_below="@id/relative_layout_top" >
+
+            <TextView
+                android:id="@+id/mid_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作完成进度："
+                android:textColor="#738DA0"
+                android:textSize="@dimen/text_size_nomal" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/mission_list_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mid_text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/mid_text1" />
+
+            <TextView
+                android:id="@+id/progress_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/progress_bar"
+                android:textColor="#31B0E8"
+                android:textSize="@dimen/text_size_nomal" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cut_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout_mid"
+            android:layout_below="@id/relative_layout_mid"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/work_home_mission_list_adapter_item_cut_line" />
+
+        <TextView
+            android:id="@+id/work_home_mission_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/relative_layout_mid"
+            android:layout_below="@id/cut_line"
+            android:layout_marginTop="8dp"
+            android:gravity="top"
+            android:paddingBottom="10dp"
+            android:text="打球打球打球打球打球打球"
+            android:textColor="#738DA0"
+            android:textSize="@dimen/text_size_nomal" />
+    </RelativeLayout>
+
+</RelativeLayout>
